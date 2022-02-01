@@ -1,6 +1,5 @@
 
 # Attacker.py (Attacker Side Script)
-# Author: Syed Naveed Abbas
 
 # TCP Connection
 import socket
