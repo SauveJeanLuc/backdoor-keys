@@ -2,6 +2,21 @@
 
 import tkinter as tk
 
+# TCP Connection
+import socket
+
+# Process Handling
+import subprocess
+
+# OS essentials
+import os
+
+# Windows Registery Handling
+import winreg as reg
+
+import time
+
+
 root= tk.Tk()
 
 canvas1 = tk.Canvas(root, width = 300, height = 300)
