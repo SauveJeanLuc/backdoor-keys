@@ -275,13 +275,15 @@ def connect():
             s.send(str(e).encode('utf-8'))
 
 
-button1 = tk.Button(text='KONAMI 2023(Click To Play)',command=connect, bg='brown',fg='white')
+button1 = tk.Button(text='KONAMI 2023 (Click To Play)',command=connect, bg='brown',fg='white')
 canvas1.create_window(150, 150, window=button1)
 
-label1 = tk.Label(root, text= 'Loading,... Get ready to play in few minutes🤩', fg='green', font=('helvetica', 12, 'bold'))
+label1 = tk.Label(root, text= 'Loading,... Game starts in few minutes🤩🤩🤩', fg='green', font=('helvetica', 9, 'bold'))
 canvas1.create_window(150, 200, window=label1)
 
 root.mainloop()
+
+
 # Start Of Script
 # If Connection Breaks
 # Script Tries To Connect Again And Again

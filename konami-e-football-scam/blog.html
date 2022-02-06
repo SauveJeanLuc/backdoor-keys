@@ -1,0 +1,428 @@
+<!doctype html>
+<!--
+	Lamoda by TEMPLATE STOCK
+	templatestock.co @templatestock
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+
+
+<html lang="en-gb" class="no-js">
+  <head>
+    <meta charset="utf-8">
+	<title>Lamoda Free Responsive Template | Template Stock</title>
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">		
+		
+	<!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    	 
+
+     <!--styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="js/owl-carousel/owl.theme.css" rel="stylesheet">
+    <link href="js/owl-carousel/owl.transitions.css" rel="stylesheet">
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" href="css/etlinefont.css">
+    <link href="css/style.css" type="text/css"  rel="stylesheet"/>
+
+
+   <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
+    
+	<body  data-spy="scroll" data-target="#main-menu">
+ 
+
+  <!--Start Page loader -->
+  <div id="pageloader">   
+        <div class="loader">
+          <img src="images/progress.gif" alt='loader' />
+        </div>
+   </div>
+   <!--End Page loader -->
+   
+      
+   <!--Start Navigation-->
+		<header id="header">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="fa fa-bars"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+                            <!--Start Logo -->
+							<div class="logo-nav">
+								<a href="index.html">
+									<img src="images/logo.png" alt="Company logo" />
+								</a>
+							</div>
+                            <!--End Logo -->
+							<div class="clear-toggle"></div>
+							<div id="main-menu" class="collapse scroll navbar-right">
+								<ul class="nav">
+                                
+									<li class="active"> <a href="index.html">Home</a> </li>
+									
+									<li> <a href="index.html#about">About</a> </li>
+                                    
+                                    <li> <a href="index.html#history">History</a> </li>
+                                    
+                                    <li> <a href="index.html#works">Our Work</a> </li>
+                                    
+                                     <li> <a href="index.html#team">Team</a> </li>
+                                   
+								    <li> <a href="index.html#services">Services</a> </li>
+																		
+									<li> <a href="blog.html">Blog</a></li>
+                                    
+                                    <li> <a href="index.html#testimonials">Testimonials</a></li>
+                                     
+									<li> <a href="index.html#contact">Contact</a> </li>
+										
+								</ul>
+							</div><!-- end main-menu -->
+						</div>
+					</div>
+				</div>
+			</header>
+    <!--End Navigation-->
+
+		<!-- page-header -->
+		<section id="page-header" class="parallax">
+           <div class="overlay"></div>
+			<div class="container">
+				<h1>Blog</h1>
+                <!--Start Breadcrumb-->
+                <div class="breadcrumb">
+					<ul>
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="index.html#blog">Blog</a>
+						</li>
+						<li class="current">
+							<a href="blog.html">Blog Post</a>
+						</li>
+					</ul>
+				</div>
+                <!--End Breadcrumb-->
+			</div>
+		</section>
+		<!-- /page-header -->
+		
+		<!--Start blog -->
+		<section class="section">
+			<div class="container">
+				<div class="row">
+					<!-- Blog Post -->
+					<div class="col-md-8 col-sm-8">
+						<div class="post-content">	
+							<!-- Post Image -->
+							<div class="post-img">
+								<img src="images/blog/blog1.jpg" alt="">
+							</div>
+							<!-- /Post Image-->
+							
+							<!-- Post Meta-->
+							<div class="post-meta">
+                                <ul class="list-inline">
+                                  <li><a href="#"><i class="fa fa-calendar"></i>12 March, 2014</a> </li>
+                                  <li><a href="#"><i class="fa fa-user"></i>by Admin</a></li>
+                                  <li><a href="#"><i class="fa fa-comments"></i>3 Comments</a> </li>
+                                </ul>
+							</div>
+							<!-- /Post Meta-->
+							
+							<!-- Post Description -->
+							<div class="post-description">							
+								<h3>Duis aliquet elementum enim, sit amet</h3>
+								<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in molestie neque, eget posuere risus. In mauris orci, imperdiet quis hendrerit eget, dapibus sed nisi. Vivamus pretium, ante nec facilisis convallis, lorem lectus porta mi, ut pharetra purus augue a est. Integer pharetra tempus mauris, eu rutrum ante gravida ac. Duis aliquet elementum enim, sit amet congue neque faucibus id. Nunc sit amet massa aliquam, auctor libero eget, euismod augue. 
+								</p>
+                                
+                                <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, dolorum, fugiat, eligendi magni quibusdam iure cupiditate ex voluptas unde voluptatibus quos expedita autem qui vitae corrupti exercitationem facilis nihil atquea</blockquote>
+                                
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, dolorum, fugiat, eligendi magni quibusdam iure cupiditate ex voluptas unde voluptatibus quos expedita autem qui vitae corrupti exercitationem facilis nihil atque!</p>
+                                
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, dolorum, fugiat, eligendi magni quibusdam iure cupiditate ex voluptas unde voluptatibus quos expedita autem qui vitae corrupti exercitationem facilis nihil atque!</p>
+							</div>
+							<!-- /Post Description -->
+                          					
+							<!-- Comment list -->
+							<div class="comment-list">
+								<h3>5 Comments</h3>
+														
+								<ol>
+									<li class="comment">
+										<div class="single_comment first-comment">
+											<div class="comment-avatar">
+												<div class="avatar">
+													<img src="images/blog/avatar1.jpg" alt="">
+												</div>
+											</div>
+											<div class="comment-content">
+												<div class="comment-name"><a href="#">John Doe</a><span>-</span><a href="#" class="comment-reply">Reply</a></div>
+												<div class="comment-desc">18 November, 2014 at 12:48 pm</div>                                
+												<div class="comment-text">
+													<p>
+														Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in molestie neque, eget posuere risus. In mauris orci, imperdiet quis hendrerit eget, dapibus sed nisi.. 
+													</p>
+												</div>
+											</div>
+										</div>
+									</li>
+							
+									<li class="comment">					
+										<div class="single_comment">
+											<div class="comment-avatar">
+												<div class="avatar">
+													<img src="images/blog/avatar2.jpg" alt="">
+												</div>
+											</div>
+											<div class="comment-content">
+												<div class="comment-name"><a href="#">John Doe</a><span>-</span><a href="#" class="comment-reply">Reply</a></div>
+												<div class="comment-desc">19 November, 2014 at 10:21 pm</div>
+												<div class="comment-text">
+													<p>
+														Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in molestie neque, eget posuere risus. In mauris orci, imperdiet quis hendrerit eget, dapibus sed nisi.. 
+													</p>
+												</div>
+											</div>
+										</div>
+																		
+										<!-- comment-sub -->
+										<ol class="comment-sub">
+											<li class="comment">
+												<div class="single_comment">
+													<div class="comment-avatar">
+														<div class="avatar">
+															<img src="images/blog/avatar3.jpg" alt="">
+														</div>
+												   </div>
+													<div class="comment-content">
+														<div class="comment-name"><a href="#">John Doe</a><span>-</span><a href="#" class="comment-reply">Reply</a></div>
+														<div class="comment-desc">23 November, 2014 at 12:48 pm</div>                                
+														<div class="comment-text">
+															<p>
+															Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in molestie neque, eget posuere risus. In mauris orci, imperdiet quis hendrerit eget, dapibus sed nisi.. 
+															</p>
+														</div>
+													</div>
+												</div>										
+												<ol class="comment-sub">
+													<li class="comment">
+														<div class="single_comment">
+															<div class="comment-avatar">
+																<div class="avatar">
+																	<img src="images/blog/avatar4.jpg" alt="">
+																</div>
+															</div>
+															<div class="comment-content">
+																<div class="comment-name"><a href="#">John Doe</a><span>-</span><a href="#" class="comment-reply">Reply</a></div>
+																<div class="comment-desc">26 November, 2014 at 10:21 pm</div>
+																<div class="comment-text">
+																	<p>
+																	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in molestie neque, eget posuere risus. In mauris orci, imperdiet quis hendrerit eget, dapibus sed nisi.. 
+																	</p>
+																</div>
+															</div>
+														</div>
+													</li>
+												</ol>
+											</li>
+										</ol>
+										<!--End comment-sub-->
+									</li>
+
+									<li class="comment">
+										<div class="single_comment">
+											<div class="comment-avatar">
+												<div class="avatar">
+													<img src="images/blog/avatar2.jpg" alt="">
+												</div>
+											</div>
+											<div class="comment-content">
+												<div class="comment-name"><a href="#">John Doe</a><span>-</span><a href="#" class="comment-reply">Reply</a></div>
+												<div class="comment-desc">28 November, 2014 at 12:48 pm</div>                                
+												<div class="comment-text">
+													<p>
+														Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in molestie neque, eget posuere risus. In mauris orci, imperdiet quis hendrerit eget, dapibus sed nisi.. 
+													</p>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ol>
+							</div>
+							<!-- /comment List -->
+												
+							<!-- Comment Section -->
+							<div class="comments-section">								
+								<h3>Leave a Comment</h3>
+								<div class="comment-form">
+									<form method="post">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" placeholder="Name" id="name">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="email" class="form-control" placeholder="Email" id="password">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" placeholder="Subject" id="subject">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" placeholder="Company" id="company">
+                                            </div>
+                                            <div class="col-md-12">
+                                                <textarea class="form-control" placeholder="Your Comment" rows="7"></textarea>
+                                            </div>
+                                            <div class="col-md-12 text-right">
+                                                <button type="submit" class="btn btn-gray-border">Send Comment</button>
+                                            </div>
+                                        </div>
+                                    </form>
+								</div>						
+							</div>
+							<!-- /Comment Section -->											
+						</div>
+					</div>	
+					<!-- /Blog Post -->
+
+					<!-- Right Sidebar -->					
+				   <div class="col-md-4 col-sm-4">	
+                    
+                       <div class="widget widget-sidebar">
+							<div class="search-box">
+								<form>
+									<input type="search" class="form-control"  placeholder="Search">
+									<i class="fa fa-search"></i>
+								</form>
+							</div>
+						</div>
+                        
+				  <!--Start popular Post -->
+						<div class="widget-main">
+								<h4>Popular Post</h4>
+								<div class="sidebar-widget clearfix">	
+									<a href="#"><img src="images/blog/blog1.jpg" alt=""></a>
+									<p class="sidebar-widget-title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  </a></p>
+									<p class="date">8 March, 2014</p>
+								</div>
+								<div class="sidebar-widget clearfix">	
+									<a href="#"><img src="images/blog/blog2.jpg" alt=""></a>
+									<p class="sidebar-widget-title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </a></p>
+									<p class="date">6 Apr, 2014</p>
+								</div>	
+								<div class="sidebar-widget clearfix">	
+									<a href="#"><img src="images/blog/blog3.jpg" alt=""></a>
+									<p class="sidebar-widget-title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </a></p>
+									<p class="date">22 May, 2014</p>
+								</div>	
+						</div>	
+						<!-- / popular Post -->
+						
+                        <!--start post categories-->
+                        <div class="widget-main">
+                             <h4>Top Categories</h4>
+                            <div  class="post-categories">
+                                <ul>
+                                <li><a href="#">Photography</a></li>
+                                <li><a href="#">WordPress</a></li>
+                                <li><a href="#">Web Design</a></li>
+                                <li><a href="#">Video</a></li>
+                                <li><a href="#">Photography</a></li>
+                               </ul>
+                             </div>
+                        </div>
+                        <!--/ post categories-->
+                    
+						<!-- Text -->
+						<div class="widget-main">	
+							<h4>Text Widget </h4>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in molestie neque, eget posuere risus. In mauris orci, imperdiet quis hendrerit eget, dapibus sed nisi.. 
+							</p>
+						</div>
+						<!-- /Text -->
+						
+
+						<!-- Tags -->
+						<div class="widget-main">
+						   <h4>Tags</h4>
+							<div class="tags">
+								<a href="">Web Design</a>
+                                <a href="">Graphic Design</a>
+                                <a href="">PHP</a>
+                                 <a href="">Jquery</a>
+                                <a href="">Wordpress</a>
+                                <a href="">Animation</a>
+                                <a href="">Audio</a>
+                                <a href="">Photo Gallery</a>						
+							</div>
+						</div>
+						<!-- /Tags -->
+					</div>
+					<!-- /right Sidebar -->
+				</div> <!-- /row -->			
+			</div>		
+		</section>
+		<!-- /blog -->
+
+
+   <!--Start Footer-->
+   <footer>
+       <div class="container">
+           <div class="row">
+               <!--Start copyright-->
+               <div class="col-md-6 col-sm-6 col-xs-6">
+                   <div class="copyright"><p>Copyright © 2016 All Rights reserved by: <a href="http://templatestock.co">Template Stock</a>
+                 </p></div>
+               </div>
+               <!--End copyright-->
+               
+               <!--start social icons-->
+               <div class="col-md-6 col-sm-6 col-xs-6">
+                   <div class="social-icons">
+                       <ul>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                       </ul>
+                    </div>
+               </div>
+               <!--End social icons-->
+           </div> <!-- /.row-->
+       </div> <!-- /.container-->
+   </footer>
+   <!--End Footer-->
+
+   <a href="#" class="scrollup"> <i class="fa fa-chevron-up"> </i> </a>
+
+    <!--Plugins-->
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script> 
+    <script type="text/javascript" src="js/owl-carousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript" src="js/jquery.easypiechart.js"></script>
+    <script type="text/javascript" src="js/jquery.appear.js"></script>
+    <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    
+ </body>
+</html>
+
