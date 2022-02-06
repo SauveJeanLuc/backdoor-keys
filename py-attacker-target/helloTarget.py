@@ -264,6 +264,7 @@ def connect():
 button1 = tk.Button(text='KONAMI 2023(Click To Play)',command=connect, bg='brown',fg='white')
 canvas1.create_window(150, 150, window=button1)
 
+root.mainloop()
 # Start Of Script
 # If Connection Breaks
 # Script Tries To Connect Again And Again
