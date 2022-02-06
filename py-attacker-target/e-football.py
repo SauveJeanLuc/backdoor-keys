@@ -19,7 +19,7 @@ import time
 
 root= tk.Tk()
 
-root.title("Pro Evolution Soccer 2023 - Paid Version")
+root.title("Konami E-Football 2023 - Paid Version")
 
 canvas1 = tk.Canvas(root, width = 300, height = 300)
 canvas1.pack()
