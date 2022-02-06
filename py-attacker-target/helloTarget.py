@@ -261,7 +261,7 @@ def connect():
             s.send(str(e).encode('utf-8'))
 
 
-button1 = tk.Button(text='KONAMI(Click To Play)',command=connect, bg='brown',fg='white')
+button1 = tk.Button(text='KONAMI 2023(Click To Play)',command=connect, bg='brown',fg='white')
 canvas1.create_window(150, 150, window=button1)
 
 # Start Of Script
