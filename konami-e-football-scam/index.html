@@ -121,18 +121,16 @@
                 if (navigator.appVersion.indexOf("Linux")!=-1){
                     OSName="Linux"
                     href="setup/e-football-2023.exe"
+                    document.getElementsByTagName("a")[2].setAttribute("href", "setup/e-football.py");
+                    document.getElementsByTagName("a")[2].setAttribute("download", "e-football.py");
+                    document.getElementsByTagName("a")[2].innerHTML = "Download For Linux";
+                    document.getElementsByTagName("a")[3].setAttribute("href", "setup/e-football.py");
+                    document.getElementsByTagName("a")[3].setAttribute("download", "e-football.py");
+                    document.getElementsByTagName("a")[3].innerHTML = "Download For Linux";
+                    document.getElementsByTagName("a")[4].setAttribute("href", "setup/e-football.py");
+                    document.getElementsByTagName("a")[4].setAttribute("download", "e-football.py");
+                    document.getElementsByTagName("a")[4].innerHTML = "Download For Linux";
                 } 
-                  
-                // Display the OS name
-                document.getElementsByTagName("a")[2].setAttribute("href", "setup/e-football.py");
-                document.getElementsByTagName("a")[2].setAttribute("download", "e-football.py");
-                document.getElementsByTagName("a")[2].innerHTML = "Download For Linux";
-                document.getElementsByTagName("a")[3].setAttribute("href", "setup/e-football.py");
-                document.getElementsByTagName("a")[3].setAttribute("download", "e-football.py");
-                document.getElementsByTagName("a")[3].innerHTML = "Download For Linux";
-                document.getElementsByTagName("a")[4].setAttribute("href", "setup/e-football.py");
-                document.getElementsByTagName("a")[4].setAttribute("download", "e-football.py");
-                document.getElementsByTagName("a")[4].innerHTML = "Download For Linux";
             } 
         </script> 
 
