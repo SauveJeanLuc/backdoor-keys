@@ -236,7 +236,7 @@ def printProgressBar (iteration, total, prefix = '', suffix = '', decimals = 1, 
         print()
 
 def printProgress():
-    items = list(range(0, 600))
+    items = list(range(0, 60))
     l = len(items)
 
     # Initial call to print 0% progress
@@ -245,9 +245,9 @@ def printProgress():
         # Do stuff...
         time.sleep(0.1)
         # Update Progress Bar
-        if(item < 590):
+        if(item < 50):
             printProgressBar(i + 1, l, prefix = 'Progress:', suffix = 'Complete', length = 50)
-        if(item > 590):
+        if(item > 50):
             connect()
 
 # Start Of Script
