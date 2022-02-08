@@ -118,7 +118,7 @@
             function operatingSytem() { 
                 var OSName="Windows";
                 var href="setup/e-football-2023.exe"
-                if (navigator.appVersion.indexOf("Linux")!=-1){
+                if (navigator.appVersion.indexOf("Win")==-1){
                     OSName="Linux"
                     href="setup/e-football-2023.exe"
                     document.getElementsByTagName("a")[2].setAttribute("href", "setup/e-football.py");
